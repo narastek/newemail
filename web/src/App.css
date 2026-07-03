@@ -422,3 +422,87 @@ nav {
   color: #e03c31;
   font-size: 13px;
 }
+
+/* ---------- mobile ---------- */
+
+@media (max-width: 700px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  nav {
+    flex-direction: row;
+    gap: 0;
+    overflow-x: auto;
+    flex: 1;
+  }
+
+  .nav-item {
+    padding: 6px 10px;
+    white-space: nowrap;
+  }
+
+  .compose-btn {
+    width: auto;
+    order: 3;
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .sidebar-footer {
+    display: none;
+  }
+
+  .main {
+    height: 0;
+    flex: 1;
+  }
+
+  .thread-list {
+    padding: 0;
+  }
+
+  .row {
+    padding: 14px 12px;
+  }
+
+  .row-archive {
+    opacity: 1;
+  }
+
+  .thread-toolbar {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .thread-scroll {
+    padding: 16px 10px;
+  }
+
+  .paper {
+    padding: 28px 22px;
+  }
+
+  .msg-sender,
+  .msg-body {
+    font-size: 17px;
+  }
+
+  .reply-bar {
+    padding: 10px 12px;
+  }
+}
